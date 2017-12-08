@@ -1,0 +1,51 @@
+{
+  "name": "@serafin/api-browser",
+  "version": "0.1.0",
+  "description": "Serafin API browser is a browser for REST APIs that implement OpenAPI and JSON-HAL.",
+  "main": "index.js",
+  "keywords": [
+    "api",
+    "browser",
+    "rest",
+    "openApi",
+    "JSON-HAL",
+    "tool"
+  ],
+  "author": "Nicolas Degardin",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^8.0.55",
+    "@types/webpack": "^3.8.1",
+    "bootstrap": "^4.0.0-beta.2",
+    "express": "^4.16.2",
+    "forever": "^0.15.3",
+    "gulp-typescript": "^3.2.3",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.39",
+    "@types/react": "^16.0.27",
+    "@types/react-dom": "^16.0.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-watch": "^4.3.11",
+    "gulp-webpack": "^1.5.0",
+    "istanbul": "^0.4.5",
+    "merge-stream": "^1.0.1",
+    "mocha": "^4.0.1",
+    "remap-istanbul": "^0.9.5",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "start": "forever --minUptime 1000 --spinSleepTime 1000 lib/index.js",
+    "dev": "npm install && gulp build && gulp dev",
+    "test": "mocha **/*Tests.js"
+  }
+}

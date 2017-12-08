@@ -1,0 +1,14 @@
+/.idea
+/.vscode
+/.backup
+/.dockerignore
+/.gitignore
+/.npmignore
+.DS_Store
+/node_modules
+/npm-debug.log
+docker-compose.*
+/src
+/gulpfile.js
+/lib/test
+/lib/example
